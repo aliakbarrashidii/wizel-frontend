@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import AdminLayout from './AdminLayout';
 import { SERVICES as DEFAULT_SERVICES } from '../../data/services';
-const API = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+const API = import.meta.env.VITE_API_URL || 'https://wizel-backend.onrender.com';
 const getToken = () => localStorage.getItem('wizel_admin_token');
 export default function AdminServices() {
   const [services, setServices] = useState(DEFAULT_SERVICES);
